@@ -43,7 +43,7 @@ def load_methylation_matrix(file_path: str, samples: List[str] = None,
 
 
 def retrieve_sample_methylation(meth_samples: Dict[str, str], n_jobs=1,
-                                verbosity=0):
+                                verbosity=0, consensus_rows=None):
     batches = defaultdict(list)
     for sample, sample_file in meth_samples.items():
         batches[sample_file].append(sample)
@@ -53,15 +53,19 @@ def retrieve_sample_methylation(meth_samples: Dict[str, str], n_jobs=1,
     batch_rows = []
     for batch in batch_values:
         batch_rows.extend(batch[2])
-    consensus_rows = [row for row, count in Counter(batch_rows).items() if count == len(batch_values)]
-    combined_matrix, combined_header = [], []
+    if not consensus_rows:
+        consensus_rows = [row for row, count in Counter(batch_rows).items() if count == len(batch_values)]
+    combined_matrix, combined_header = np.zeros((len(consensus_rows), len(meth_samples))), []
+    matrix_index = 0
     for matrix, header, rows in batch_values:
         row_indices = [rows.index(row) for row in consensus_rows]
-        combined_matrix.append(matrix[row_indices, :])
+        _, matrix_columns = matrix.shape
+        matrix_end = matrix_index + matrix_columns
+        combined_matrix[:, matrix_index:matrix_end] = matrix[row_indices, :]
+        matrix_index = matrix_end
         if not combined_header:
             combined_header.extend(header)
         else:
             combined_header.extend(header[1:])
-    return np.concatenate(combined_matrix, axis=1), combined_header, consensus_rows
-
+    return combined_matrix, combined_header, consensus_rows
 
