@@ -58,7 +58,8 @@ def retrieve_sample_methylation(meth_samples: Dict[str, str], n_jobs=1,
     combined_matrix, combined_header = np.zeros((len(consensus_rows), len(meth_samples))), []
     matrix_index = 0
     for matrix, header, rows in batch_values:
-        row_indices = [rows.index(row) for row in consensus_rows]
+        row_counts = {row: count for count, row in enumerate(rows)}
+        row_indices = [row_counts[row] for row in consensus_rows]
         _, matrix_columns = matrix.shape
         matrix_end = matrix_index + matrix_columns
         combined_matrix[:, matrix_index:matrix_end] = matrix[row_indices, :]
