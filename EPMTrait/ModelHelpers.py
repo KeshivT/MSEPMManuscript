@@ -3,6 +3,10 @@ import numpy as np
 from scipy import optimize
 import scipy.stats as stats
 
+from EPMTrait.GenerateForm import GenerateForm
+
+basic_func = GenerateForm().functional_form
+
 
 def get_age_bins(ages, bin_number=20):
     binning = []
@@ -23,13 +27,9 @@ def mae(x, y):
     return np.mean(abs(x - y))
 
 
-def basic_func(x, a, b, c, form=(1 / 2)):
-    return a * np.asarray(x) ** form + c
-
-
-def fit_trend(known: np.ndarray, predicted: np.ndarray, func, form):
-    popt, pcov = optimize.curve_fit(func, [1 + x for x in known], predicted)
-    expected = func(known + 1, *popt, form)
+def fit_trend(known: np.ndarray, predicted: np.ndarray, func=basic_func):
+    popt, pcov = optimize.curve_fit(func, known, predicted)
+    expected = func(known, *popt)
     return popt, pcov, expected
 
 
