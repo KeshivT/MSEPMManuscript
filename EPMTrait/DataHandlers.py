@@ -18,9 +18,11 @@ def open_file(file_path) -> Union[io.BufferedReader, io.open]:
 
 
 def load_methylation_matrix(file_path: str, samples: List[str] = None,
-                            verbose=False, total_sites=450000) -> Tuple[np.ndarray, List[str], List[str]]:
+                            verbose=False, total_sites=450000, row_labels: list = None) -> Tuple[np.ndarray, List[str],
+                                                                                                 List[str]]:
     meth_matrix, row_ids = [], []
     header, sample_indices = None, None
+    r_labels = None if not row_labels else set(row_labels)
     with io.BufferedReader(gzip.open(file_path, 'rb')) as matrix:
         for line in tqdm(matrix, disable=True if not verbose else False, total=total_sites):
             d_line = line.decode('utf-8').strip().split(',')
@@ -37,24 +39,28 @@ def load_methylation_matrix(file_path: str, samples: List[str] = None,
                 else:
                     sample_indices = [sample for sample in range(len(header) - 1)]
             else:
+                row_id = d_line[0].replace('"', '')
+                if r_labels:
+                    if row_id not in r_labels:
+                        continue
                 meth_matrix.append(np.asarray(d_line[1:], dtype=np.float)[sample_indices])
-                row_ids.append(d_line[0].replace('"', ''))
+                row_ids.append(row_id)
     return np.array(meth_matrix), header, row_ids
 
 
 def retrieve_sample_methylation(meth_samples: Dict[str, str], n_jobs=1,
-                                verbosity=0, consensus_rows=None):
+                                verbosity=0, rows=None):
     batches = defaultdict(list)
     for sample, sample_file in meth_samples.items():
         batches[sample_file].append(sample)
     batch_values = joblib.Parallel(n_jobs=n_jobs,
                                    verbose=verbosity)(joblib.delayed(load_methylation_matrix)
-                                                      (*[file, samples]) for file, samples in batches.items())
+                                                      (*[file, samples, False, 1, rows]) for
+                                                      file, samples in batches.items())
     batch_rows = []
     for batch in batch_values:
         batch_rows.extend(batch[2])
-    if not consensus_rows:
-        consensus_rows = [row for row, count in Counter(batch_rows).items() if count == len(batch_values)]
+    consensus_rows = [row for row, count in Counter(batch_rows).items() if count == len(batch_values)]
     combined_matrix, combined_header = np.zeros((len(consensus_rows), len(meth_samples))), []
     matrix_index = 0
     for matrix, header, rows in batch_values:
