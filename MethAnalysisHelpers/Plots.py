@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
 
-from EPMTrait.ModelHelpers import basic_func, fit_trend, mae, r2
+from MethAnalysisHelpers.ModelHelpers import basic_func, fit_trend, mae, r2
 
 
 def plot_known_predicted(known: np.ndarray, predicted: np.ndarray,

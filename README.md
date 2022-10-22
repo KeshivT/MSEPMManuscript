@@ -1,2 +1,2 @@
-# EPMTraitAssociation
-EPM Trait Association Work
+# Methylation Array Analysis and Processing Helpers
+Helper classes for GEO array processing and analysis helpers

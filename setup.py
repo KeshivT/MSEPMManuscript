@@ -13,17 +13,17 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 
-setup(name='EPMTrait',
-      version='0.0.1',
-      description='EPM Data Processing Helpers',
+setup(name='MethAnalysisHelpers',
+      version='0.0.2',
+      description='Analysis Processing Helpers',
       long_description=long_description,
       long_description_content_type="text/markdown",
       url='https://github.com/NuttyLogic/EPMTraitAssocition',
       author='Colin P. Farrell',
       author_email='colinpfarrell@gmail.com',
       license='MIT',
-      packages=['EPMTrait',
-                'EPMTrait.NormalizationRefs'],
+      packages=['MethAnalysisHelpers',
+                'MethAnalysisHelpers.NormalizationRefs'],
       classifiers=['Programming Language :: Python :: 3.6',
                    'Programming Language :: Python :: 3.7',
                    'Programming Language :: Python :: 3.8'],

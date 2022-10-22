@@ -1,6 +1,6 @@
 import os
 
-from EPMTrait.DataHandlers import load_methylation_matrix, retrieve_sample_methylation
+from MethAnalysisHelpers.DataHandlers import load_methylation_matrix, retrieve_sample_methylation
 
 test_data_dir = os.getcwd() + '/test_data/'
 test_matrix_1 = f'{test_data_dir}test_matrix.txt.gz'

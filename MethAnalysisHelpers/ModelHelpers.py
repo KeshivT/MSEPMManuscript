@@ -3,7 +3,7 @@ import numpy as np
 from scipy import optimize
 import scipy.stats as stats
 
-from EPMTrait.GenerateForm import GenerateForm
+from MethAnalysisHelpers.GenerateForm import GenerateForm
 
 basic_func = GenerateForm().functional_form
 
