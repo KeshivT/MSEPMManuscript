@@ -1,0 +1,144 @@
+24. EPIC-Italy at HuGeF
+(Submitter supplied) This Series contains data from 845 participants (188 men and 657 women) in the EPIC-Italy cohort that was produced at the Human Genetics Foundation (HuGeF) in Turin, Italy. At the last follow-up (2010), 424 participants remained cancer-free, 235 had developed primary breast cancer, 166 had developed primary colorectal cancer, and 20 had developed other primary cancers. Anthropometric measurements, and dietary and lifestyle information obtained by questionnaire are also available.
+Organism:	Homo sapiens
+Type:		Methylation profiling by array
+Platform: GPL13534 845 Samples
+FTP download: GEO (IDAT) ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE51nnn/GSE51032/
+Series		Accession: GSE51032	ID: 200051032
+
+27. Continuous Aging of the Human DNA Methylome Throughout the Human Lifespan
+(Submitter supplied) DNA methylation plays an important role in development of disease and the process of aging. In this study we examine DNA methylation at 476,366 sites throughout the genome of white blood cells from a population cohort (N = 421) ranging in age from 14 to 94 years old. Age affects DNA methylation at almost one third (29%) of the sites (Bonferroni adjusted P-value <0.05), of which 60.5% becomes hypomethylated and 39.5% hypermethylated with increasing age. more...
+Organism:	Homo sapiens
+Type:		Methylation profiling by high throughput sequencing
+Platform: GPL13534 732 Samples
+FTP download: GEO (IDAT, TXT, XLSX) ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE87nnn/GSE87571/
+Series		Accession: GSE87571	ID: 200087571
+
+28. Epigenome analysis of depressed and control subjects.
+(Submitter supplied) Genome wide DNA methylation profiling of depressed (n=489) and control subjects (n=210)  that were recruited at the Max Planck Institute of Psychiatry (MPIP). The Illumina Infinium 450k Human DNA methylation Beadchip was used to obtain DNA methylation profiles based whole blood samples.
+Organism:	Homo sapiens
+Type:		Methylation profiling by genome tiling array
+Platform: GPL13534 699 Samples
+FTP download: GEO (IDAT, TXT) ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE125nnn/GSE125105/
+Series		Accession: GSE125105	ID: 200125105
+
+30. Differential DNA methylation in Rheumatoid arthritis
+(Submitter supplied) Genome-wide DNA methylation level was studied to determine whether Rheumatoid arthritis patients (cases) has methylation differences comparing to normal controls in peripheral blood leukocytes (PBLs). We used Illumina HumanMethylation450 BeadChip array to determine the genome-wide DNA methylation difference in PBLs from Rheumatoid arthritis patients (cases) and normal controls
+Organism:	Homo sapiens
+Type:		Methylation profiling by array
+Platform: GPL13534 689 Samples
+FTP download: GEO (IDAT, TXT) ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE42nnn/GSE42861/
+Series		Accession: GSE42861	ID: 200042861
+
+39. Epigenome analysis of ischemic stroke patients
+(Submitter supplied) We performed a genome-wide methylation study in whole-blood DNA from 404 ischemic stroke patient cohort, distributed across 3 ischemic stroke subtypes: Large-artery atherosclerosis (n=132), Small-artery disease (n=141) and Cardio embolic (n=127) . Illumina HumanMethylation450 BeadChip array was used to measure DNA methylation in CpG sites.  We performed a genome-wide methylation study in whole-blood DNA from 185 ischemic stroke patient cohort. more...
+Organism:	Homo sapiens
+Type:		Methylation profiling by array
+Platform: GPL13534 589 Samples
+FTP download: GEO (IDAT, TXT) ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE69nnn/GSE69138/
+Series		Accession: GSE69138	ID: 200069138
+
+42. Genome wide DNA methylation study of Parkinson's disease in whole blood samples
+(Submitter supplied) Genome wide DNA methylation profiling of whole blood and saliva samples in Parkinson's disease (PD) patients and PD-free controls. The Illumina Infinium 450k Human DNA methylation Beadchip was used to obtain DNA methylation profiles. Samples included 335 PD patients and 237 controls with blood DNA.
+Organism:	Homo sapiens
+Type:		Methylation profiling by genome tiling array
+Platform: GPL13534 572 Samples
+FTP download: GEO (IDAT, TXT) ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE111nnn/GSE111629/
+Series		Accession: GSE111629	ID: 200111629
+
+44. Epigenome analysis of depressed and control subjects. [subset]
+(Submitter supplied) Genome wide DNA methylation profiling of depressed (n=324) and control subjects (n=209)  that were recruited at the Max Planck Institute of Psychiatry (MPIP). The Illumina Infinium 450k Human DNA methylation Beadchip was used to obtain DNA methylation profiles based whole blood samples.
+Organism:	Homo sapiens
+Type:		Methylation profiling by array
+Platform: GPL13534 537 Samples
+FTP download: GEO (IDAT, TXT) ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE128nnn/GSE128235/
+Series		Accession: GSE128235	ID: 200128235
+
+50. Epigenetic findings in periodontitis in UK twins: a cross sectional study
+(Submitter supplied) Genetic and environmental risk factors contribute to periodontal disease, but the underlying susceptibility pathways are not fully understood. Epigenetic mechanisms are malleable regulators of gene function that can change in response to genetic and environmental stimuli, thereby providing a potential mechanism mediating risk effects in periodontitis. The aim of this study is to identify epigenetic changes across tissues that are associated with periodontal disease.
+Organism:	Homo sapiens
+Type:		Methylation profiling by genome tiling array
+Platform: GPL13534 480 Samples
+FTP download: GEO (IDAT, TXT) ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE121nnn/GSE121633/
+Series		Accession: GSE121633	ID: 200121633
+
+64. Integrative Epigenome-Wide Analysis Shows That DNA Methylation May Mediate Genetic Risk In Inflammatory Bowel Disease [Whole blood, Methylation profiling]
+(Submitter supplied) Epigenetic alterations may provide important insights into gene-environment interaction in inflammatory bowel disease (IBD). Here we observe  epigenome-wide DNA methylation differences in 240 newly-diagnosed IBD cases and 190 controls. These include 439 differentially methylated positions (DMPs) and 5 differentially methylated regions (DMRs), which we study in detail using whole genome bisulphite sequencing. more...
+Organism:	Homo sapiens
+Type:		Methylation profiling by genome tiling array
+Platform: GPL13534 384 Samples
+FTP download: GEO (IDAT, TXT) ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE87nnn/GSE87648/
+Series		Accession: GSE87648	ID: 200087648
+
+75. Many obesity-associated SNPs strongly associate with DNA methylation changes at proximal promoters and enhancers
+(Submitter supplied) Background: The mechanisms of how genetic variants (SNPs) identified in genome-wide association studies act to influence body mass remain unknown for most of these SNPs, which continue to puzzle the scientific community. Recent evidence points to epigenetic and chromatin state of the genome to have an important role.  Methods: 355 healthy young individuals were genotyped for 52 known obesity-associated SNPs and we obtained DNA methylation levels in their blood using the Illumina 450K BeadChip. more...
+Organism:	Homo sapiens
+Type:		Methylation profiling by array
+Platform: GPL13534 355 Samples
+FTP download: GEO (IDAT, TXT) ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE73nnn/GSE73103/
+Series		Accession: GSE73103	ID: 200073103
+
+84. Methylome Analysis and Epigenetic Changes Associated with Menarcheal Age
+(Submitter supplied) Epigenome-wide association study of age at menarche in a group of 329 women from the EPIC-Italy cohort.
+Organism:	Homo sapiens
+Type:		Methylation profiling by array
+Platform: GPL13534 329 Samples
+FTP download: GEO (IDAT) ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE51nnn/GSE51057/
+Series		Accession: GSE51057	ID: 200051057
+
+90. Epigenetic signature of birth-weight discordance in Danish twins
+(Submitter supplied) Epigenetic profiling of birth-weight discordant twins using Illumina's 450K Human DNA methylation BeadChip
+Organism:	Homo sapiens
+Type:		Methylation profiling by genome tiling array
+Platform: GPL13534 312 Samples
+FTP download: GEO (CSV, IDAT) ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE61nnn/GSE61496/
+Series		Accession: GSE61496	ID: 200061496
+
+98. Age-related profiling of DNA methylation in CD8+ T cells reveals changes in immune response and transcriptional regulator genes
+(Submitter supplied) Human ageing affects the immune system resulting in an overall decline in immunocompetence. Although all immune cells are affected during aging, the functional capacity of T cells is most influenced and is linked to decreased responsiveness to infections and impaired differentiation. We studied age-related changes in DNA methylation and gene expression in CD4+ and CD8+ T cells from younger and older individuals. more...
+Organism:	Homo sapiens
+Type:		Methylation profiling by genome tiling array
+Platform: GPL13534 296 Samples
+FTP download: GEO (CSV, IDAT) ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE59nnn/GSE59065/
+Series		Accession: GSE59065	ID: 200059065
+
+134. Integrative Epigenome-Wide Analysis Shows That DNA Methylation May Mediate Genetic Risk In Inflammatory Bowel Disease [Cells, Methylation profiling]
+(Submitter supplied) Epigenetic alterations may provide important insights into gene-environment interaction in inflammatory bowel disease (IBD). Here we observe  epigenome-wide DNA methylation differences in 240 newly-diagnosed IBD cases and 190 controls. These include 439 differentially methylated positions (DMPs) and 5 differentially methylated regions (DMRs), which we study in detail using whole genome bisulphite sequencing. more...
+Organism:	Homo sapiens
+Type:		Methylation profiling by genome tiling array
+Platform: GPL13534 240 Samples
+FTP download: GEO (IDAT, TXT) ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE87nnn/GSE87640/
+Series		Accession: GSE87640	ID: 200087640
+
+139. CHARGE and Kabuki syndromes: Gene-specific DNA methylation signatures
+(Submitter supplied) Epigenetic dysregulation has emerged as mechanism in the etiology of neurodevelopmental disorders. Two such disorders, CHARGE and Kabuki syndromes, result from loss of function mutations in chromodomain helicase DNA-binding protein 7 (CHD7LOF) and lysine (K) methyltransferase 2D (KMT2DLOF), respectively. We expected that epigenetically driven developmental pathways regulated by CHD7 and KMT2D would overlap and that DNA methylation (DNAm) alterations downstream of the mutations in these genes would identify common target genes, elucidating a mechanistic link between these conditions, as well as specific target genes for each. more...
+Organism:	Homo sapiens
+Type:		Methylation profiling by genome tiling array
+Platform: GPL13534 235 Samples
+FTP download: GEO (IDAT) ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE97nnn/GSE97362/
+Series		Accession: GSE97362	ID: 200097362
+
+149. Altered DNA methylation profiles in blood from patients with sporadic Creutzfeldt-Jakob disease
+(Submitter supplied) Prion diseases are fatal and transmissible neurodegenerative disorders caused by the misfolding and aggregation of prion protein. Although recent studies have implicated epigenetic variation in common neurodegenerative disorders, no study has yet explored their role in human prion diseases. Here we profiled genome-wide blood DNA methylation in the most common human prion disease, sporadic Creutzfeldt-Jakob disease (sCJD). more...
+Organism:	Homo sapiens
+Type:		Methylation profiling by genome tiling array
+Platform: GPL13534 219 Samples
+FTP download: GEO (CSV, IDAT) ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE156nnn/GSE156994/
+Series		Accession: GSE156994	ID: 200156994
+
+314. Comprehensive constitutional genetic and epigenetic characterization of Lynch-like individuals [Blood]
+(Submitter supplied) Background: In ~50% of Lynch syndrome (LS)-suspected patients (also called Lynch-like syndrome, LLS), the causal mechanism for cancer predisposition remains unknown. Our aim was to elucidate the constitutional basis of mismatch repair (MMR) deficiency in LLS patients throughout a comprehensive genetic and epigenetic analysis. Methods: One hundred and fifteen LLS patients harboring MMR deficient tumors and no pathogenic germline MMR gene mutations were included in this study. more...
+Organism:	Homo sapiens
+Type:		Methylation profiling by genome tiling array
+Platform: GPL13534 112 Samples
+FTP download: GEO (IDAT) ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE128nnn/GSE128064/
+Series		Accession: GSE128064	ID: 200128064
+
+366. An evaluation of analysis pipelines for DNA methylation profiling using the Illumina Human Methylation 450k platform
+(Submitter supplied) Abstract The proper identification of differentially methylated CpGs is central in most epigenetic studies. The Illumina Human Methylation 450k BeadChip is widely used to quantify DNA methylation, nevertheless the design of an appropriate analysis pipeline faces severe challenges due to the convolution of biological and technical variability and the presence of a signal bias between Infinium I and II probe design types. more...
+Organism:	Homo sapiens
+Type:		Methylation profiling by genome tiling array
+Platform: GPL13534 95 Samples
+FTP download: GEO (IDAT, TXT) ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE43nnn/GSE43976/
+Series		Accession: GSE43976	ID: 200043976
+
