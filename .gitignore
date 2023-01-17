@@ -15,6 +15,7 @@ DataProcessing/__pycache__/*
 Paper/MSEPM-Manuscript.aux
 Paper/MSEPM-Manuscript.bcf
 Paper/MSEPM-Manuscript.blg
+Paper/MSEPM-Manuscript.bbl
 Paper/MSEPM-Manuscript.alg
 Paper/MSEPM-Manuscript.log
 Paper/MSEPM-Manuscript.out
@@ -24,3 +25,4 @@ Analysis/ipynb_checkpoints/*
 Analysis/norm_ref.pkl
 
 *-checkpoint.ipynb
+MethylationAnalysisHelpers/.idea/*
