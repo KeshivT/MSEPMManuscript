@@ -204,10 +204,10 @@ site-specific rates (Figure 2C-F).  However, the model has difficulty capturing 
 simulated factors (age, CN and CE) and the inferred factors (Figure 2C, E-F). This is likely due to limitations of 
 the model at capturing nonlinear methylation association and a limited training range for normally and exponentially 
 distributed traits. Regardless, the four-factor model can accurately predict the simulated methylation value 
-(Figure 2 D) and site intercept (Supp. Figure 1G). We also assessed the model robustness to variation in the 
+(Figure 2 D) and site intercept (Supp. Figure 1A). We also assessed the model robustness to variation in the 
 number of samples and sites used for model training by randomly selecting a reduced subset of samples or sites for 
 model training. MSEPM models trained with age, sex, CN, and CE can accurately assess all simulated phenotypes with 
-few samples and sites (Supp Figure2 B-E). 
+few samples and sites (Supp Figure 1B-E). 
 
 \subsection{Blood MSEPM Model}
 
@@ -239,8 +239,8 @@ factors was assessed by fitting a trendline between epigenetic state predictions
 using the state prediction made for the MSEPM model trained with all four input factors. Performance of the MSEPM 
 model was then evaluated using the testing samples ($n=4,082$). The performance of the MSEPM largely closely 
 resembles the simulation results. All four MSEPM models capture the nonlinear relationship between age and 
-methylation status (Supp. Figure 6). The epigenetic state prediction associated with age improves as the underlying 
-methylation data are more fully explained through the addition of epigenetic factors (Supp. Figure 6). The MSEPM model 
+methylation status (Supp. Figure 2). The epigenetic state prediction associated with age improves as the underlying 
+methylation data are more fully explained through the addition of epigenetic factors (Supp. Figure 2). The MSEPM model 
 fit with Age, Sex, CT-PC1 and CT-PC2 can accurately model the associated epigenetic state for each factor (Figure 4 A-D) 
 and accurately predicts the methylation levels at individual sites ($R^2=0.935$, $MAE=0.035$, Figure 4 E). 
 The trained MSEPM produces a collection of methylation site models that can help explain the association between 
