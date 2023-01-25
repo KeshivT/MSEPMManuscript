@@ -21,6 +21,15 @@ Paper/MSEPM-Manuscript.log
 Paper/MSEPM-Manuscript.out
 Paper/MSEPM-Manuscript.run.xml
 
+Paper/MSEPM-ManuscripiSupplement.aux
+Paper/MSEPM-ManuscripiSupplement.bcf
+Paper/MSEPM-ManuscripiSupplement.blg
+Paper/MSEPM-ManuscripiSupplement.bbl
+Paper/MSEPM-ManuscripiSupplement.alg
+Paper/MSEPM-ManuscripiSupplement.log
+Paper/MSEPM-ManuscripiSupplement.out
+Paper/MSEPM-ManuscripiSupplement.run.xml
+
 Analysis/ipynb_checkpoints/*
 Analysis/norm_ref.pkl
 
