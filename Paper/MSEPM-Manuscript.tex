@@ -273,11 +273,11 @@ packages were utilized during analysis.
 We simulated individuals whose methylation is determined by four factors and their associated epigenetic factors: 
 a uniform factor approximating age with a non-linear association with methylation status 
 $$q \sim\mathcal{U}(0,100), s_{Age}=q^{0.5}, \text{Figure 1A-B}$$ a binary trait resembling sex, linearly associated 
-with methylation status $$q \sim B(1,.5), s_{Sex}=q, \text{Figure 1C-D}$$ a continuous normal (CN) phenotype 
-resembling a cell type with a linear association with methylation status $$q \sim\mathcal{N}(1, 0.1), s_{CN}=q, 
+with methylation status $$q \sim B(1,.5), s_{Sex}=q, \text{Figure 1C-D}$$ a continuous normal (CN) phenotype a linear 
+association with methylation status $$q \sim\mathcal{N}(1, 0.1), s_{CN}=q, 
 \text{Figure 1E-F}$$ and a 
-continuous exponentially (CE) distributed trait resembling obesity with a linear association with methylation status 
-$$q \sim \frac{1}{20}e^{-x/20}, s_{CE}=q, \text{Figure 1G-H})$$ 
+continuous exponentially (CE) distributed trait with a linear association with methylation status 
+$$q \sim \frac{1}{20}e^{-x/20}, s_{CE}=q, \text{Figure 1G-H}$$ 
 
 
 We simulated 90 methylation sites (Figure 1I). We then evaluated the MSEPM model as follows. We simulated 1000 samples with the 
@@ -485,9 +485,12 @@ We have no conflicts of interest to disclose.
     \begin{figure}
     \includegraphics[scale=.2]{Figures/Figure2.png}
     \footnotesize
-    \caption*{\small \textbf{Figure 2:} (A) The MAE of the factor predictions on the testing set as multiple factors are modeled simultaneously. (B) Prediction methylation 
-MAE as factors are included in the MSEPM model. (C) Model coefficients for Age, Sex, Continuous Normal and Continuous Exponential factors for models 
-trained $(n = 500)$ with all four simulated factors. (D). Simulated and predicted methylation values for all simulated testing sites across all training folds. }
+    \caption*{\small \textbf{Figure 2:} (A) The MAE of the factor predictions on the testing set as multiple factors are modeled simultaneously and 
+    (B) predicted methylation MAE as factors are included in the MSEPM model where the centerline is the 50th quantile and the box 
+    with greatest width contains 50\% of the underlying data with each smaller box containing 50\% of the remaining data 
+    with 6 levels of box width. (C) Model coefficients for 
+Age, Sex, Continuous Normal and Continuous Exponential factors for models trained $(n = 500)$ with all four simulated 
+factors. (D). Simulated and predicted methylation values for all simulated testing sites across all training fold }
     \end{figure}
 \end{center}
 
@@ -506,8 +509,8 @@ trained $(n = 500)$ with all four simulated factors. (D). Simulated and predicte
 \includegraphics[scale=.15]{Figures/Figure4.png}
 \footnotesize
 \caption*{\small \textbf{Figure 4:} MSEPM model trained with age, sex, CT-PC1 and CT-PC2 predictions within testing 
-set for methylation associated factors (A) age, (B) sex, (C) CT-PC1 and (D) CT-PC2. (E) Observed and predicted
- methylation values for training set has high concordance $(R^2=0.833, MAE=0.035)$}
+set for epigenetic factors (A) age, (B) sex, (C) CT-PC1 and (D) CT-PC2. (E) Observed and predicted
+ methylation values for training set has high concordance $(R^2=0.933, MAE=0.035)$}
 \end{figure}
 \end{raggedleft}
 
