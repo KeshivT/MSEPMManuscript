@@ -164,7 +164,7 @@ by definition linear with the methylation status at any site, the original input
 
 Provided a trained MSEPM model and an unobserved methylation matrix, epigenetic factors are estimated by calculating each independent OLS for solution all $i$ 
 sites given the $r_{i,k}$ coefficients set for the respective input factor.  These epigenetic factors can then be used to find the expected methylation value 
-using the trained individual site models where $$E[m_{i,j}] = r_{i,0} + P_{j} \dot R_{i}$$
+using the trained individual site models where $$E[m_{i,j}] = r_{i,0} + P_{j} \dot R_{i}$$ where $P_{j} \dot R_{i}$ is a matrix of point values p and r.
 
 \subsection{MSEPM Simulation Framework}
 
@@ -174,17 +174,17 @@ epigenetic factor $p_{k,j}$ as function of time, or age, and magnitude, $p_{k,j}
 where $p_{k,j} = Age_j p_{k,j}^{0,\gamma_{k}}$. In practice the value of the $p_{k,j}$ is often unknown and the association between 
 methylation status and $p_{k,j}$ is inferred through the observable factor $p_{k,j}^0$. 
 
-Methylation sites were simulated by first randomly setting the dynamic range of the methylation site, 
-$-1< \delta < 1$ a site intercept, $r^0_i$, and the site error, $\sigma_i \sim \mathcal{U}(0.025, 0.05)$. The dynamic 
+Methylation sites were simulated by first randomly setting the range of the methylation site, 
+$-1< \delta < 1$ a site intercept, $r^0_i$, and the site error, $\sigma_i \sim \mathcal{U}(0.025, 0.05)$. The possible 
 range of the methylation site is described by the initial methylation value, $m_0 ~ \beta(.2,.2)$, 
-and the target methylation value, $m_t$, where the dynamic range is $\delta_i = m_t - m_o$.
-The value of $m_t$ is set conditionally to ensure dynamic range is always larger than some specified threshold, $\theta$, where 
+and the target methylation value, $m_t$, where the range is $\delta_i = m_t - m_o$. $\beta(.2,.2)$ is the beta distribution with its parameters for randomly setting the sample.
+The value of $m_t$ is set conditionally to ensure site variability is always larger than some specified threshold, $\theta$, where 
 $ \theta \leq|\delta| \geq. r^0_i ~ \beta(.2,.2)$.
 
 
 Simulated methylation sites are then randomly associated with a combination of zero, one, or multiple epigenetic factors. Rates for sites 
 associated with multiple factors were set by sampling from a uniform distribution. The weighted factor rates are normalized so 
-the input combination of traits describes the dynamic range of the simulated site, $\delta$. If a site is associated 
+the input combination of traits describes the range of the simulated site, $\delta$. If a site is associated 
 with no factors the observed methylation status of a site is described by a random normal with a characteristic offset, $\hat{m_i} = r_{0,i} + N(\mu, \sigma)$.
  
 
@@ -271,8 +271,8 @@ packages were utilized during analysis.
 \subsection{Simulated Methylation Associated Traits}
 
 We simulated individuals whose methylation is determined by four factors and their associated epigenetic factors: 
-a uniform factor approximating age with a non-linear association with methylation status 
-$$q \sim\mathcal{U}(0,100), s_{Age}=q^{0.5}, \text{Figure 1A-B}$$ a binary trait resembling sex, linearly associated 
+a uniformly distributed factor approximating age with a non-linear association with methylation status 
+$$q \sim\mathcal{U}(0,100), s_{Age}=q^{0.5}, \text{Figure 1A-B}$$ a binary distributed trait resembling sex, linearly associated 
 with methylation status $$q \sim B(1,.5), s_{Sex}=q, \text{Figure 1C-D}$$ a continuous normal (CN) phenotype a linear 
 association with methylation status $$q \sim\mathcal{N}(1, 0.1), s_{CN}=q, 
 \text{Figure 1E-F}$$ and a 
