@@ -66,7 +66,7 @@ Despite their widespread use, these methods do not account for other factors tha
   capture a large faction of the variability at thousands of DNA methylation sites.  Moreover, this approach allows us to identify sites that 
   are primarily affected by aging and no other factors.  An analysis of these sites reveals that those that lose methylation over time are 
   enriched for CTCF transcription factor chip peaks, while those that gain methylation over time are associated with bivalent promoters of 
-  genes that are not expressed in blood. These observation suggest mechanisms that underlie age associated methylation changes and suggest 
+  genes that are not expressed in blood. These observations suggest mechanisms that underlie age associated methylation changes and suggest 
   that age associated increases in methylation may not have strong functional consequences on cell states. In conclusion, the MSEPM is 
   capable of accurately modeling multiple methylation associated factors and the models produced can illuminate site specific 
   combinations of factors that affect methylation dynamics.}
@@ -168,7 +168,7 @@ using the trained individual site models where $$E[m_{i,j}] = r_{i,0} + P_{j} \d
 
 \subsection{MSEPM Simulation Framework}
 
-We implemented a simulation framework using the MSEPM formulation evaluate the performance of the MSEPM model under various conditions.
+We implemented a simulation framework using the MSEPM formulation to evaluate the performance of the MSEPM model under various conditions.
 To simulate the association between methylation status and an observable factor we modeled the 
 epigenetic factor $p_{k,j}$ as function of time, or age, and magnitude, $p_{k,j}^0$ with a non-linear transformation $\gamma_{k}$, 
 where $p_{k,j} = Age_j p_{k,j}^{0,\gamma_{k}}$. In practice the value of the $p_{k,j}$ is often unknown and the association between 
@@ -251,11 +251,11 @@ of genomic features provided by the user\cite{Layer2018-gr}.
 
 
 \subsection{H3K4me3 enrichment analysis} 
-Enrichment of analysis for H3K4me3 (figure 7A) was carried out by downloading rpm normalized bigwig files of H3K4me3 ChIP-seq data from 
+Enrichment of analysis for H3K4me3 (Figure 7A) was carried out by downloading rpm normalized bigwig files of H3K4me3 ChIP-seq data from 
 epigenomesportal\cite{Bujold2016-vk} for CD38+ B Cells and CD56+ NTK Cells (for both 0-5 years old and 60-65 years old individuals). 
 Heatmaps of H3K4me3 were generated using deepTools2\cite{Ramirez2016-xl} using the computeMatrix and plotHeatmap function to plot the 
 bigwig signal over genomic regions of cluster 7 as the BED input. The IGV genome browser\cite{Robinson2011-he} was used to generate an image of the KCTD1 
-and IRS2 promoter regions shown in figure 7B using downloaded bigwig tracks.
+and IRS2 promoter regions shown in Figure 7B using downloaded bigwig tracks.
 
 
 \subsection{Analysis Environment}
@@ -287,9 +287,7 @@ four epigenetic factors described above. We then simulated methylation values us
  Within each simulation, epigenetic state predictions and methylation site predictions were made for all testing samples. All models captured 
  the nonlinear association between simulated age and methylation (Supp. Figure 1). As the number of factors in the model is increased the mean 
  absolute error (MAE) between the predicted epigenetic states and the simulated epigenetic factors decreases (Figure 2A). Importantly, to accurately
-  assess simulated age it is necessary to account for the influence of the other simulated factors (Sex, CN, CE). The MAE between the predicted 
-  and simulated methylation values decreases as simulated factors are added to the model, and accurately assessing the methylation status of a 
-  simulated site requires that the factor associated with the methylation status at the site is included in the model (Figure 2A). 
+  assess simulated age it is necessary to account for the influence of the other simulated factors (Sex, CN, CE). 
 
 The MSEPM model generated using all four simulated factors can capture the relative magnitude of the simulated site-specific rates (Figure 2C-F).  
 However, the model has difficulty capturing the exact relationship between the simulated factors (age, CN and CE) and the inferred 
